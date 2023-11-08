@@ -4,13 +4,5 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_z_tDkH4uEe6oKp40VCJOOA",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_z_tDkH4uEe6oKp40VCJOOA - metadata",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 } ]
