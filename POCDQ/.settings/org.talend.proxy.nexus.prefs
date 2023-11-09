@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+nexus.proxy.enable=true
+nexus.proxy.password=talend-custom-libs-admin
+nexus.proxy.type=NEXUS_3
+nexus.proxy.url=http\://10.101.110.162\:8081
+nexus.proxy.username=talend-custom-libs-admin
