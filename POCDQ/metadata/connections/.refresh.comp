@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_IvdTQIPZEe6V3uiSxY0FPA" name="MoratelVerticaDev" id="_1BY4ioOXEe6BApu8MxDE_w" label="MoratelVerticaDev" dataPackage="_Ivd6UIPZEe6V3uiSxY0FPA" DatabaseType="Vertica" DriverClass="com.vertica.jdbc.Driver" URL="jdbc:vertica://10.101.110.125:5433/xopssec?" dbVersionString="VERTICA_9_0" Port="5433" Username="dbadmin" Password="enc:system.encryption.key.v1:gCH5n/kgexCxxh8pzkmw72jl0UHPh2mfRgYk34W6Dhg5Xhc=" ServerName="10.101.110.125" DatasourceName="" FileFieldName="" SID="xopssec" SqlSynthax="" StringQuote="" NullChar="" DbmsId="vertica_id" ProductId="VERTICA" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="public">
+    <taggedValue xmi:id="_IvdTQYPZEe6V3uiSxY0FPA" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_IvdTQoPZEe6V3uiSxY0FPA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_IvdTQ4PZEe6V3uiSxY0FPA" tag="Status" value=""/>
+    <taggedValue xmi:id="_IvdTRIPZEe6V3uiSxY0FPA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_IvdTRYPZEe6V3uiSxY0FPA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_IvdTRoPZEe6V3uiSxY0FPA" tag="Description" value=""/>
+    <taggedValue xmi:id="_IvdTR4PZEe6V3uiSxY0FPA" tag="Author" value=""/>
+    <taggedValue xmi:id="_IvdTSIPZEe6V3uiSxY0FPA" tag="otherParameter"/>
+    <taggedValue xmi:id="_IvdTSYPZEe6V3uiSxY0FPA" tag="DB ProductName" value="Vertica Database"/>
+    <taggedValue xmi:id="_IvdTSoPZEe6V3uiSxY0FPA" tag="DB ProductVersion" value="12.00.0000"/>
+    <taggedValue xmi:id="_IvdTS4PZEe6V3uiSxY0FPA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_IvdTTIPZEe6V3uiSxY0FPA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+    <parameters xmi:id="_IvdTTYPZEe6V3uiSxY0FPA" key="CONN_PARA_KEY_USERNAME" value="dbadmin"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Ivd6UIPZEe6V3uiSxY0FPA" name="xopssec" dataManager="_IvdTQIPZEe6V3uiSxY0FPA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ivd6UYPZEe6V3uiSxY0FPA" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
