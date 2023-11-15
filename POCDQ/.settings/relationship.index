@@ -20,11 +20,15 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_13KlUH77Ee6BApu8MxDE_w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "_z-f6gIOQEe6BApu8MxDE_w",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_z-f6gIOQEe6BApu8MxDE_w - traffict_data",
+    "id" : "_13KlUH77Ee6BApu8MxDE_w - users",
     "version" : "Latest",
     "type" : "schema"
   } ]
