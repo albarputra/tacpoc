@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:DatabaseConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="com.mysql.cj.jdbc.Driver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:UwrKgfQWJf5uEmbzzAhx/4L9UxnaDoRTuXn6iGAFVQkXQOfI5DxnkaM=" Port="3306" ProductId="MYSQL" SID="talendPOC" SQLMode="false" ServerName="10.101.110.214&#10;" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mysql://10.101.110.214&#10;:3306/talendPOC?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" UiSchema="" Username="akbar" dbVersionString="MYSQL_8" id="_4E18GoOPEe6BApu8MxDE_w" label="talendPOC" name="talendPOC" xmi:id="_QaxjUIOQEe6BApu8MxDE_w" xmi:version="2.0">
+  <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_QaxjUYOQEe6BApu8MxDE_w"/>
+  <taggedValue tag="package filter" value="" xmi:id="_QbOPQIOQEe6BApu8MxDE_w"/>
+  <taggedValue tag="Status" value="" xmi:id="_QbOPQYOQEe6BApu8MxDE_w"/>
+  <taggedValue tag="Version" value="0.1" xmi:id="_QbOPQoOQEe6BApu8MxDE_w"/>
+  <taggedValue tag="Purpose" value="" xmi:id="_QbOPQ4OQEe6BApu8MxDE_w"/>
+  <taggedValue tag="Description" value="" xmi:id="_QbOPRIOQEe6BApu8MxDE_w"/>
+  <taggedValue tag="Author" value="" xmi:id="_QbOPRYOQEe6BApu8MxDE_w"/>
+  <taggedValue tag="otherParameter" xmi:id="_QbOPRoOQEe6BApu8MxDE_w"/>
+  <parameters key="CONN_PARA_KEY_USERNAME" value="akbar" xmi:id="_QaxjUoOQEe6BApu8MxDE_w"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_805317db-0855-4e42-82cf-dd3026fa5988"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I8NF1ppfDXZqKyoHbINXz+fbPz0JXN/1yh4MHJCzxteqigWZ8y5Z4n9Bbdp74NydA4Au3V1z4lwu&#13;
+p3kUGCuUYA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6e23ab0e-b2e4-4317-9669-9f9ce54046c0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UJY0JSJuSvM3vFjI89ZTzztOE3uM8Tu6bpPIC9wr4nB1LJY4WhsaWLQo7TtXgjIlrK1AWTHpYGhT&#13;
+aj2J0NON9g==</DigestValue></Reference></SignedInfo><SignatureValue>PNW+Munw+MHbdOD5d0nyBckG9emst18fZm7RdREOQf4/7UMKQcFOzuZEzHQzSjClgrkqlBxDg0RL&#13;
+JgKnbzvspubhpdFU373icRKxV+/nD59m2JQZXL9Fqy01edgNYYII07exB5TuQ7nKclOVn2kb1sbN&#13;
+VZlpVR2/gsvb36QtDM1lAM79y6Ug0le0TpRam6s/beUHFM5aJ8tdPZZi34s55Hz8eHk6DXDY/Wgu&#13;
+ygsYCXeq1rdbfXoD2Ek8Zeo7/Y57DthYXEmQmFW0MdHbRUcli/JSQN6WUvZCMVBkK87KfUxaIRhy&#13;
+dDcGlGsk/Da3qAIYXv0WUf1QPTck0UbA34Av6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6e23ab0e-b2e4-4317-9669-9f9ce54046c0" Target="#_805317db-0855-4e42-82cf-dd3026fa5988"><Timestamp>2023-11-20 03:45:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:DatabaseConnection>
