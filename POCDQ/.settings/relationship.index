@@ -1,5 +1,28 @@
 [ {
   "baseItem" : {
+    "id" : "_3fT24IdWEe6V3uiSxY0FPA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_1BY4ioOXEe6BApu8MxDE_w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_z-f6gIOQEe6BApu8MxDE_w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_z-f6gIOQEe6BApu8MxDE_w - traffict_data",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_H4I0QH74Ee6BApu8MxDE_w",
     "version" : "0.1",
     "type" : "job"
