@@ -45,7 +45,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ee4vi+LxR0rJTohzKIKok5Dy+9cJqlSfuNzpnChk"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:EZYK8jLZ65qrlBh+4nFB3KbLnop9n1yOSOnVjejM"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HJzjm40MF7ktI8c6i6ROJSxgZFujgsPAyL7Z4EFk"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Ow7rE8HNHkHgcsJnQfotSLOGz34NORTAhaez+fxb"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -128,7 +128,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;xopssec&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7kzGnFLoqTtkVW1zHGB9pzRgxqNd/0zLwXmjECs/Kwoa3A+v/Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0inpfGutJ4UD+f5eWtz6HQOaLHBy6O+gOQVdxhPNWd14PqgNDQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;traffic_data&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -148,26 +148,28 @@
       <column comment="" defaultValue="" key="false" length="19" name="COUNT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHttpRequest_1"/>
-    <elementParameter field="TEXT" name="URI" value="&quot;https://api.telegram.org/bot6692201196:AAGIOEZafWsmy5aiSHfEIAbu3IcZpA5QOUA/sendMessage?chat_id=618476359&amp;text=&quot;+ ((String)globalMap.get(&quot;tDBInput_1_ERROR_MESSAGE&quot;))"/>
-    <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
-    <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" show="false" value=""/>
-    <elementParameter field="CHECK" name="OUT_TO_FILE" value="false"/>
-    <elementParameter field="FILE" name="OUT_FILE_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="CREATE_DIRS" show="false" value="false"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
-    <elementParameter field="TEXT" name="USR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:iN8h9gZrVJJYfpf8GHaFy0z8/hY48WPMYx0waA2x"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
-    <elementParameter field="TEXT" name="CONNECT_TIMEOUT" show="false" value="30"/>
-    <elementParameter field="TEXT" name="READ_TIMEOUT" show="false" value="0"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tHttpRequest_1">
-      <column comment="" defaultValue="" key="false" length="19" name="COUNT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="19" name="COUNT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
@@ -183,7 +185,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;talendPOC&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;akbar&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q9oMa7ncEwxrP8Xh84gmJEfWNyX+eI0LVexfWGFtbkmAvPubmvaRcE0SkQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vlbyxqkaKiXvydeFqujfPlulxAZevR0UzH6qnYsGrNnH6Xel0xKXM5BO6A=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;traffict_data&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -236,7 +238,30 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tHttpRequest_1">
+  <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHttpRequest_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;https://api.telegram.org/bot6692201196:AAGIOEZafWsmy5aiSHfEIAbu3IcZpA5QOUA/sendMessage?chat_id=618476359&amp;text=&quot;+ "/>
+    <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
+    <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" show="false" value=""/>
+    <elementParameter field="CHECK" name="OUT_TO_FILE" value="false"/>
+    <elementParameter field="FILE" name="OUT_FILE_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="CREATE_DIRS" show="false" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
+    <elementParameter field="TEXT" name="USR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:kEzitT30wiiosoznZNucu2xFAo+rtmmZUAxhwB61"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECT_TIMEOUT" show="false" value="30"/>
+    <elementParameter field="TEXT" name="READ_TIMEOUT" show="false" value="0"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHttpRequest_1">
+      <column comment="" defaultValue="" key="false" length="19" name="COUNT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
@@ -259,13 +284,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_752a71fa-2d20-4661-aabe-972e6c37f4ce"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f8oAxlU0l95u2bFechVLX34LSwbCoqp5l3lvbr6sxBLRA1oN4FPHCzrxbSoNhjyQm3mAXUF4/wwW&#13;
-FQ3Y+aSrNg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1ea51fae-27ae-4a06-80d4-b1935550787a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>12jNeXhkzryBpt8brTFkOi/hTL8HAs5Zujd/kKQRpZH6erszb5XrhdEzA7JrvkxqxWoLcAN1sGtJ&#13;
-YnCbiedwdQ==</DigestValue></Reference></SignedInfo><SignatureValue>Jiur3mQMwaweOucbormef5xngnf0uo1DDxFspEYe4BPccTc1zX7YHOIn4k4NFEfDR95SsXcg1h9w&#13;
-SmgkNrbqNavQCwtufXEet7M6PcgOKx541xKmv/LyiIu9wcUWZqL+p/WUd2pPjTOf5hyMBfuwbgAp&#13;
-ABOkpKeQxeoL+m0bqSgwfkrv6pqUsR57P4htz8Zl/dhOSU/XxuhDB2yxvZgOuWukkZiNobCmsLNH&#13;
-Rb50g2hQOeTj1pl4hPzV7X2+++j/UewraTtqUxYz1tNCGToVDoVx1SEhqSQb9QgfHBr1tWPwlrWG&#13;
-Cq4/F73dEXG7O0UvzE22t1WohVSMEPb2WiQWwQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHttpRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ee7d3045-66fa-4fbf-935d-87d2dd40396e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ODkNCUoyRX1YmJ0H1HOHL3nqGLhGosifl55gS2TkrzHG7RTnOnAEwXFQARaoge03UcI2CipHiegL&#13;
+HY8GC1uC4g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_115bf9fd-45d2-4c3a-966c-cd29c2dc170c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>utoUGoEBPHZ7T917cuerJRADQ+Q6OYntHntGDsQnhHALleQECUGbokT9tLFtEiczMr7Lzw66O92Z&#13;
+DdIT1dzGCQ==</DigestValue></Reference></SignedInfo><SignatureValue>EtPRgoebv++iaQWTGET//Owws9Ec05Uq7jq1N6JSySqIeL0B4eCtPMWYp48CldCODsx7BUbqSaku&#13;
+grwnwcY0RZC4nWAlcwZ8xx/B31xYKCcNDXOtSa82hNxdGsKGokVnzxmSp2IE/MCwHJWs0IZac6xx&#13;
+YktByF0R4OCCpb+gFBNcBUSpRZS47iPv9oa734FUeh1j11v3BkYV9oLqHrXpCY2ohrbjQD0WdocZ&#13;
+A4D6n34r/iArsuKAfpqwAJWwXGh9e2CtxYRmqJHFT1hBsm5cBmdtsyJnzGwRkFrL38zkAEuT45/Q&#13;
+nyFjW5Zb5vyBlieGSODfQ4OYyh0PfZ1Ib5cs1A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -287,4 +317,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1ea51fae-27ae-4a06-80d4-b1935550787a" Target="#_752a71fa-2d20-4661-aabe-972e6c37f4ce"><Timestamp>2023-11-20 03:36:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_115bf9fd-45d2-4c3a-966c-cd29c2dc170c" Target="#_ee7d3045-66fa-4fbf-935d-87d2dd40396e"><Timestamp>2023-11-20 03:38:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
