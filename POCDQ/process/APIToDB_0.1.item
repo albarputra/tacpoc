@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:chlE5CL5XX1h2V9h7z0DEyBreakjJaSOzwWXg38W"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6NhRshlMZNGT7aU9qYi9Y5bgYuRZAC1vGwV7XJIp"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:p0OoXpoRskA28jtwBWLvQVZs6fzQh71Rlle5mCzU"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ruQpdwjt7vFjV+xlqYnEEAQyzYKPUGiLtUV/HWUu"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -133,7 +133,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="HTTP Digest"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;Berca.MTI&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:8/n8Sv70Y1KeZkG5H8M9w9pGxbgl+U9ONi2nAApFbwW9LhYvueSV"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:F1MX+QTAi8hPX8tK41vqRE81nVrTo+Ph+mRCHTq0hylBfAZ9zZjZ"/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -161,7 +161,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:ucrhFvfHIADIsHyEte7o8UIm2W1D4m360YMyTZD5"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:M7HqgKSUL2ZCTDVtNOb6NlbJsak+XXOcEdRI+54x"/>
     <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
@@ -285,10 +285,10 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;xopssec&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3bDhPICdqxahcbmov6ir6YVw6FMCRNoE1E62j4nc9jppn4lODQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9amrs7RYQwIQnDq8NxYIfIqJRhFt0N9gZ/ostBYpn9m4JbodiA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;from_api&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
-    <elementParameter field="CHECK" name="USE_CASCADE" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
@@ -342,18 +342,18 @@
     <elementParameter field="TEXT" name="LABEL" value="MoratelVerticaDev"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="225" name="encrypt_cid" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="225" name="encrypt_cid" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="225" name="encrypt_cid" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="225" name="encrypt_cid" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -387,11 +387,11 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="true" length="225" name="encrypt_cid" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="225" name="encrypt_cid" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tVerticaConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="32">
@@ -405,7 +405,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;xopssec&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/Yjd/d+nDsrco8mQ05eee2PdiW+GjXHx9X7FHyFf2vsTQubbZw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jGmxHUH+40hVYmI21q+alQSAdtTAoG+/0dixjE1YB74ckaVcwQ=="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -426,7 +426,7 @@
     <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
     <elementParameter field="TEXT" name="USR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:3EDlnVY34dRJIDEtC+IvirwKpZRPyB3o861nn8Ql"/>
+    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:byUCZBVLwy7QS+pPlXrJVlvbejgaZr5j5CliR76x"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
     <elementParameter field="TEXT" name="CONNECT_TIMEOUT" show="false" value="30"/>
@@ -454,7 +454,7 @@
     <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
     <elementParameter field="TEXT" name="USR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:SQ+1D0HCHcQobeMGkH89oE2Raqkf8XZQB8OENldP"/>
+    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:To2FYSlUPGFS0UQKfugWbYdmZY450w4nwxyQOHgV"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
     <elementParameter field="TEXT" name="CONNECT_TIMEOUT" show="false" value="30"/>
@@ -517,13 +517,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7213ae18-b907-4469-bfdf-0cfe44abda3c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>h2DGx49A0u7TxGNTSh+kn7mhNTiJB+daEOuXp5PoGTHMpevdWeRysTyx60+MqkBuvmd9TsQdGSXp&#13;
-B1X6vdJIOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_20b7c09d-252e-40a9-bcf9-f3e38ba5a300"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>deYOVsvRUATQOoopVziTrn3TCCO7ln5X3dBjm8cly25rZpg4hEyctYZC3YuDAsFIB2YTNFthAroU&#13;
-oMftga0maA==</DigestValue></Reference></SignedInfo><SignatureValue>MoWBnAE85487sP4uRNJvFzZ/OevVsfqRtsIJpaiiYxOxUec5a+3yNGtxrJe3uNLNPF5YOD9cbdh+&#13;
-xtsxg9q3rCC3MQ+JUtMnENZdKhNHV10DIP5i8PFodsuzaDBqPfMaNoJTxvdJtTHmCOLG2rjBW2e3&#13;
-6TQPHzzGYgQETM/E/7Uyf/6H941HmHcBkhA5hdhvUVs9Kr0IKe0rFhyrwQOfbnAPW57vM1qSmdig&#13;
-HjeKB5nzvtbYpPaTlkM15n9ZsUJqR2bEciuLRBu2Sh6HpPU1UnAv/QAeAXXcv3zG8dOe/jY9nPzQ&#13;
-LGeZeNCorIJc/rCvZbI2JAzBwqcmk0oqHdXY9w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_79d4f51d-dc23-4e47-819b-2ca66742dad0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1fe3S1HL3stUYa5yguYsK4mM4vgFuhiyN74PEbkt5/IlFMqoPQ3cc7sGPYMLsVVlz8+X5o2vBYEW&#13;
+uAkyM/Idsg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0b06ee07-a24d-4f7c-823a-d6f7dcb1e364"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fg6iMU0PVJKBomB4zImhs6OFDUJofoo8wSE+geGUFbCMu3LAX8Nq7IYyHups/gsXQ53zs0HpVbr6&#13;
+yJ2ck8ISsg==</DigestValue></Reference></SignedInfo><SignatureValue>gRobDT1OU4fvrLkGg+UCsyWqv/zhKEQrPfvb7eeQID6aDhT94Z0LbfcC+EuwFvV83tHeNSQyWjN+&#13;
+Ru8+11ulPNgu0CwL7K/eE2RZEW2DgpGg/ZFQp/jJRwsRm/JaRqbV27TYnDLpeeVeoQvgCHh+rmXt&#13;
+PToztasV9KPNJGVRGLVqFNQXn0zZwob4SgLqSgmKwt2tTad4CYQx/lsOGJlmdL6iFo+s+dENoBpp&#13;
+Alu6YOYfPG7zLwYwt20CGfVOnfQLuaT/ky3HH20o1D0VDJC6UbvDXr2kVPhK2wWieOBCPlsfT1s0&#13;
+q+NKHVXUoEWeOW4PGRAeTD1wcc7myhETA/4T0w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -545,4 +545,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_20b7c09d-252e-40a9-bcf9-f3e38ba5a300" Target="#_7213ae18-b907-4469-bfdf-0cfe44abda3c"><Timestamp>2023-11-20 09:47:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0b06ee07-a24d-4f7c-823a-d6f7dcb1e364" Target="#_79d4f51d-dc23-4e47-819b-2ca66742dad0"><Timestamp>2023-11-20 09:48:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
