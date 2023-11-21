@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <dataquality.analysis:Analysis xmi:id="_hcnK-YgnEe6dw7eNJOqlmQ" name="test" creationDate="2023-11-21T11:36:21.633+0700">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <dataquality.analysis:Analysis xmi:id="_hcnK-YgnEe6dw7eNJOqlmQ" name="test" supplierDependency="_i2zI0YgqEe6dw7eNJOqlmQ" creationDate="2023-11-21T11:36:21.633+0700">
     <clientDependency href="../../metadata/connections/MySQLforPOC_0.1.item#_hUtxAIgnEe6dw7eNJOqlmQ"/>
     <taggedValue xmi:id="_hcnK-ognEe6dw7eNJOqlmQ" tag="Status" value="development"/>
     <taggedValue xmi:id="_hcnK-4gnEe6dw7eNJOqlmQ" tag="Author" value="albarhp@gmail.com"/>
@@ -34,4 +34,7 @@
       </components>
     </ownedElement>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_i2zI0YgqEe6dw7eNJOqlmQ" kind="Usage" supplier="_hcnK-YgnEe6dw7eNJOqlmQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/testReport_0.1.rep#_U77muYgpEe6dw7eNJOqlmQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
