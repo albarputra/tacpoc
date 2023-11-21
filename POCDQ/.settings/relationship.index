@@ -34,6 +34,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_50XwQIhHEe6dw7eNJOqlmQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_13KlUH77Ee6BApu8MxDE_w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_13KlUH77Ee6BApu8MxDE_w - consumer_address_encrypt",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_EwuLEIgyEe6dw7eNJOqlmQ",
     "version" : "0.1",
     "type" : "job"
