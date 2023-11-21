@@ -47,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vN69bpYIh2Vfmar/7AEGBY89Elpn+ji1xV2kOzgX"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wDMv6mgnq8NkfR28hEqYX3KeOPMR1lhY6EWDJSsQ"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -82,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4XwIGMTnEusFKuR1ajlaZCCRTsXpwIEh+Acfn+c8"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HCVVYEvyHpvmpow5IDX6rODP1nl9ALaFqsfTR8tM"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -137,7 +137,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="HTTP Digest"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;Berca.MTI&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:x/F9j8zh1JgsyhzFI65jx3C2xOw9SRkc51A0+23sRXeqvxVr9URO"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:qzDf2HMP5nT4znplQ+pQXTHaCItJuet0rAvT0lMGsv4fsxiZsfvr"/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -165,7 +165,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:5QO3uAX7W52lSq4t9oTesonCpQHk33VJbKRCp9jr"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:F3jxO9lj7HdCCE3rnt0j3vC6zdEYmxVmr67Dm9W+"/>
     <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
@@ -189,9 +189,6 @@
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="out1">
-      <column comment="" key="false" length="-1" name="current_user" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="gettime" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="total_row" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="encrypt_cid" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="active_date" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="cluster" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
@@ -207,41 +204,35 @@
         <nodes name="statusCode" type="id_Integer" xpath="row1/statusCode"/>
         <nodes expression="" name="body" type="id_Document" xpath="row1/body">
           <children expression="" main="true" name="root" type="id_String" xpath="row1.body:/root">
-            <children name="current_user" outgoingConnections="//@node.1/@nodeData/@connections.0 //@node.1/@nodeData/@connections.7" type="id_String" xpath="row1.body:/root/current_user"/>
-            <children name="gettime" outgoingConnections="//@node.1/@nodeData/@connections.1 //@node.1/@nodeData/@connections.8" type="id_String" xpath="row1.body:/root/gettime"/>
-            <children name="total_row" outgoingConnections="//@node.1/@nodeData/@connections.2 //@node.1/@nodeData/@connections.9" type="id_String" xpath="row1.body:/root/total_row"/>
+            <children name="current_user" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_String" xpath="row1.body:/root/current_user"/>
+            <children name="gettime" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_String" xpath="row1.body:/root/gettime"/>
+            <children name="total_row" outgoingConnections="//@node.1/@nodeData/@connections.6" type="id_String" xpath="row1.body:/root/total_row"/>
             <children expression="" loop="true" main="true" name="items" type="id_String" xpath="row1.body:/root/items">
-              <children name="encrypt_cid" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_String" xpath="row1.body:/root/items/encrypt_cid"/>
-              <children name="active_date" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_String" xpath="row1.body:/root/items/active_date"/>
-              <children name="cluster" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_String" xpath="row1.body:/root/items/cluster"/>
-              <children name="status" outgoingConnections="//@node.1/@nodeData/@connections.6" type="id_String" xpath="row1.body:/root/items/status"/>
+              <children name="encrypt_cid" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row1.body:/root/items/encrypt_cid"/>
+              <children name="active_date" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row1.body:/root/items/active_date"/>
+              <children name="cluster" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_String" xpath="row1.body:/root/items/cluster"/>
+              <children name="status" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_String" xpath="row1.body:/root/items/status"/>
             </children>
           </children>
         </nodes>
         <nodes name="string" type="id_String" xpath="row1/string"/>
       </inputTrees>
       <outputTrees name="out1">
-        <nodes expression="[row1.body:/root/current_user]" incomingConnections="//@node.1/@nodeData/@connections.0" name="current_user" type="id_String" xpath="out1/current_user"/>
-        <nodes expression="[row1.body:/root/gettime]" incomingConnections="//@node.1/@nodeData/@connections.1" name="gettime" type="id_String" xpath="out1/gettime"/>
-        <nodes expression="[row1.body:/root/total_row]" incomingConnections="//@node.1/@nodeData/@connections.2" name="total_row" type="id_String" xpath="out1/total_row"/>
-        <nodes expression="[row1.body:/root/items/encrypt_cid]" incomingConnections="//@node.1/@nodeData/@connections.3" name="encrypt_cid" type="id_String" xpath="out1/encrypt_cid"/>
-        <nodes expression="[row1.body:/root/items/active_date]" incomingConnections="//@node.1/@nodeData/@connections.4" name="active_date" type="id_String" xpath="out1/active_date"/>
-        <nodes expression="[row1.body:/root/items/cluster]" incomingConnections="//@node.1/@nodeData/@connections.5" name="cluster" type="id_String" xpath="out1/cluster"/>
-        <nodes expression="[row1.body:/root/items/status]" incomingConnections="//@node.1/@nodeData/@connections.6" name="status" type="id_String" xpath="out1/status"/>
+        <nodes expression="[row1.body:/root/items/encrypt_cid]" incomingConnections="//@node.1/@nodeData/@connections.0" name="encrypt_cid" type="id_String" xpath="out1/encrypt_cid"/>
+        <nodes expression="[row1.body:/root/items/active_date]" incomingConnections="//@node.1/@nodeData/@connections.1" name="active_date" type="id_String" xpath="out1/active_date"/>
+        <nodes expression="[row1.body:/root/items/cluster]" incomingConnections="//@node.1/@nodeData/@connections.2" name="cluster" type="id_String" xpath="out1/cluster"/>
+        <nodes expression="[row1.body:/root/items/status]" incomingConnections="//@node.1/@nodeData/@connections.3" name="status" type="id_String" xpath="out1/status"/>
       </outputTrees>
       <outputTrees name="out3">
-        <nodes expression="[row1.body:/root/current_user]" incomingConnections="//@node.1/@nodeData/@connections.7" name="current_user" type="id_String" xpath="out3/current_user"/>
-        <nodes expression="[row1.body:/root/gettime]" incomingConnections="//@node.1/@nodeData/@connections.8" name="gettime" type="id_String" xpath="out3/gettime"/>
-        <nodes expression="[row1.body:/root/total_row]" incomingConnections="//@node.1/@nodeData/@connections.9" name="total_row" type="id_String" xpath="out3/total_row"/>
+        <nodes expression="[row1.body:/root/current_user]" incomingConnections="//@node.1/@nodeData/@connections.4" name="current_user" type="id_String" xpath="out3/current_user"/>
+        <nodes expression="[row1.body:/root/gettime]" incomingConnections="//@node.1/@nodeData/@connections.5" name="gettime" type="id_String" xpath="out3/gettime"/>
+        <nodes expression="[row1.body:/root/total_row]" incomingConnections="//@node.1/@nodeData/@connections.6" name="total_row" type="id_String" xpath="out3/total_row"/>
       </outputTrees>
       <varTables name="Var"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.3/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.1/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.1/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.1/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
@@ -266,7 +257,6 @@
       <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -276,12 +266,8 @@
         <mapperTableEntries expression="out1.active_date " name="active_date" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out1.cluster " name="cluster" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out1.status " name="status" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="&quot;current_user: &quot;+out1.current_user +&quot;, &quot;+out1.gettime+&quot;, total row:&quot;+out1.total_row " name="get_details" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="current_user" nullable="true" type="id_String"/>
-        <mapperTableEntries name="gettime" nullable="true" type="id_String"/>
-        <mapperTableEntries name="total_row" nullable="true" type="id_String"/>
         <mapperTableEntries name="encrypt_cid" nullable="true" type="id_String"/>
         <mapperTableEntries name="active_date" nullable="true" type="id_String"/>
         <mapperTableEntries name="cluster" nullable="true" type="id_String"/>
@@ -302,10 +288,10 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;xopssec&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gdSsEBsQDk+vXsV6Rwm3V5VANQEQjykhmzTgHcPYAbUYeRSdcw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GOuxUfj2NnhdWEh+EyEBcdghvedcGiPJ9Pl/O7ape7W14xYyDg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;from_api&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
-    <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="USE_CASCADE" value="true"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
@@ -347,11 +333,6 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="get_details"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
@@ -363,14 +344,12 @@
       <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="true" length="225" name="encrypt_cid" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="225" name="active_date" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="225" name="cluster" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="225" name="status" nullable="true" originalLength="225" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="get_details" nullable="true" originalLength="1000" precision="-1" sourceType="CHARACTER VARYING" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -427,7 +406,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;xopssec&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uFJbcxNTQZ71UaGhCAlDm3lEUdfBuBeXZ6plxoD73hvgC2q8yA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0uAPRvz9V5SlK4d7wu7v+fHl2LeqNAMxKmkNjYpAzj/v5AuH4w=="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -448,7 +427,7 @@
     <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
     <elementParameter field="TEXT" name="USR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:wEi4ezIYU2aG4munBIltmnaKx9I2xqEAgN0t1+mN"/>
+    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:eoc7HEpyYzLxlqGBnEGZCqmxjgTw0ndBX0uqjXl3"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
     <elementParameter field="TEXT" name="CONNECT_TIMEOUT" show="false" value="30"/>
@@ -476,7 +455,7 @@
     <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
     <elementParameter field="TEXT" name="USR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:D+vXctGpNaBHI41L8yiJKejFJl93hgXBwaoZP4du"/>
+    <elementParameter field="PASSWORD" name="PWD" show="false" value="enc:system.encryption.key.v1:EeFEoGV8cZaiqZdh648p64x6F6FgGhc1+c65SuLr"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
     <elementParameter field="TEXT" name="CONNECT_TIMEOUT" show="false" value="30"/>
@@ -506,7 +485,7 @@
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;nocsurv.notification@moratelindo.id&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:Pa7qFTkQu+MLTv6nliSSaVLXUJw7kK/kx712BecaTzyJNDK6hRaF0xo="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:qlZ+mmGDXgTlcE+Bnm/+/RUAuFO4B/zINnwMnLyS2cB0zNF1Oy9VIus="/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -594,13 +573,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8d664797-22e8-471d-b73c-ba4f45ef3139"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CHuxbR+sGxJxCOY020N60sAN93kvljlbAGl93m00XArZU3hbLlz2dQ2PKKvURjlC5XoiHUUq4xOL&#13;
-MQwMFouigw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e75184df-3f0e-495a-b6ef-4aa6f6a53461"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kyPt1T+/ALJR3Mn/3/jyk5G8dY+8tubjOZ8Or286fzRdalg9gI8JM2w6mPRf4obvYmBoWSPjUS2z&#13;
-rtUkavYmKw==</DigestValue></Reference></SignedInfo><SignatureValue>B+HU6vjisHaDMdALKqnk4PdBrkZg9evQaiQVmTHSjX2ZfwdFg1+bwjwVQyVFhUu5p8R5McTgp0OG&#13;
-6FexpbaldVMm0nT+l0Usk9A8qyUtx/nrShIoHGGDscfFtNV+l+tKZED5L/hFg47apSMmQz6ZFE2Q&#13;
-KaHXxt0PCpz63bPMNYGSXVRfq24H2Naza0rpXtbtkdBqaeq7EK0tuQe/vrIdgNZ+GSp6f9TtdFzZ&#13;
-xGTQA92i53OqIreeTLIGcqsEYyVlb8moTLEzya8iAOudHe10mWruak/q7Qt0Cz90rvSxE8UqXJE2&#13;
-EnZqZbKnsC6T/rOvYIRbEzgae5Ah8NVhMvwIYA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f8e211ff-7e38-4761-ab88-11c1c139a5c3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HuSRj6MJQcTLqA78m7QKFYNwGOsSLO0V63fEnwlvcbXwFw8k5eUB7VXzdDwD5wAU1SsBz3MyjdqX&#13;
++6aPDa2wBA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_73530c8b-17a4-4bb1-ad73-fdd1fc4d2f6a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uERBPKRotqrcPDNTy8r4JiNuLoomD9bwxCcxC1NYxWxsYeTxuv1/lD6ghEeFR02bbSkOI87B5WzE&#13;
+E6ydIWxD1A==</DigestValue></Reference></SignedInfo><SignatureValue>Ya1GtDHvThLZZHiLzaA1ocvPjkTr+m8lumudmaIMODexmTlvHYuD8F0XuWR78SzZbFYJ14n8FG5e&#13;
+AA9OX3VT6hbUGGDPASmIO+8ab6TJ/Wy8qr+b3VaY+OzQFyTInWx2JezZe6Y23caOf/zN9fB080k3&#13;
+Zh3ytBJ2G1Fb83D3XmFKZDYi2LLyN2pSqwHCsEFmRzUHG3XFDWpOVIia1bs1MYM3S5a8hBl5eI7H&#13;
+QpftpQRMnagI+HCaKjOOQkCwSWvoD2JGW/2aR6Nom8pvoIUZrSkBVD6pyf4JWYCFibaiBJkoywZo&#13;
+uOyT7iOjx1lUqhA762x+dtTIVoWt8tp9+szyYw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -622,4 +601,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e75184df-3f0e-495a-b6ef-4aa6f6a53461" Target="#_8d664797-22e8-471d-b73c-ba4f45ef3139"><Timestamp>2023-11-21 20:26:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_73530c8b-17a4-4bb1-ad73-fdd1fc4d2f6a" Target="#_f8e211ff-7e38-4761-ab88-11c1c139a5c3"><Timestamp>2023-11-21 20:38:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
