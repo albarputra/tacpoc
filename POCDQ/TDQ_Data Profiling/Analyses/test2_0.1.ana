@@ -26,7 +26,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw9YPcEe6V3uiSxY0FPA"/>
     </context>
     <results xmi:id="_XKWz4IguEe6dw7eNJOqlmQ">
-      <resultMetadata xmi:id="_XKWz4YguEe6dw7eNJOqlmQ" executionDate="2023-11-21T12:26:03.759+0700" executionDuration="384" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <resultMetadata xmi:id="_XKWz4YguEe6dw7eNJOqlmQ" executionDate="2023-11-21T12:30:47.036+0700" executionDuration="324" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxkIguEe6dw7eNJOqlmQ" count="50" computed="true">
         <parameters xmi:id="_XXnxkYguEe6dw7eNJOqlmQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
@@ -47,7 +47,7 @@
           <sqlGenericExpression xmi:id="_dlozA4guEe6dw7eNJOqlmQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxlIguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740007393939393939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000003278">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxlIguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000839393939393939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000003278">
         <parameters xmi:id="_XXnxlYguEe6dw7eNJOqlmQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
@@ -79,7 +79,7 @@
           <charactersMapping xmi:id="_dlx9CYguEe6dw7eNJOqlmQ" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxloguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740007393939393939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000003278">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxloguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000839393939393939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000003278">
         <parameters xmi:id="_XXnxl4guEe6dw7eNJOqlmQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
@@ -299,7 +299,7 @@
           <sqlGenericExpression xmi:id="_dn3no4guEe6dw7eNJOqlmQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxsIguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="2" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000002740001397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000004740005392E3939397371007E0003000000000000002E78">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxsIguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="4" uniqueValueCount="2" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000004740003392E397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400013971007E0005740005392E3939397371007E0003000000000000001D740004392E39397371007E0003000000000000001378">
         <parameters xmi:id="_XXnxsYguEe6dw7eNJOqlmQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw3YPcEe6V3uiSxY0FPA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
@@ -331,7 +331,7 @@
           <charactersMapping xmi:id="_doBYuYguEe6dw7eNJOqlmQ" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxsoguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="2" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000002740001397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000004740005392E3939397371007E0003000000000000002E78">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxsoguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="4" uniqueValueCount="2" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000004740003392E397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400013971007E0005740005392E3939397371007E0003000000000000001D740004392E39397371007E0003000000000000001378">
         <parameters xmi:id="_XXnxs4guEe6dw7eNJOqlmQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw3YPcEe6V3uiSxY0FPA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
@@ -551,7 +551,7 @@
           <sqlGenericExpression xmi:id="_dp9SU4guEe6dw7eNJOqlmQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxy4guEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="2" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000274000839393939393939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000001B740010393939393939393939393939393939397371007E0003000000000000001778">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxy4guEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="6" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000067400034141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000474000541414141417371007E00030000000000000006740007414141414141417371007E0003000000000000000274000839393939393939397371007E0003000000000000000B7400064141414141417371007E00030000000000000003740004414141417371007E0003000000000000001878">
         <parameters xmi:id="_XXnxzIguEe6dw7eNJOqlmQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw6YPcEe6V3uiSxY0FPA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
@@ -583,7 +583,7 @@
           <charactersMapping xmi:id="_dqGcWYguEe6dw7eNJOqlmQ" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxzYguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="2" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000274000839393939393939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000001B740010393939393939393939393939393939397371007E0003000000000000001778">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxzYguEe6dw7eNJOqlmQ" count="50" computed="true" distinctValueCount="6" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000067400034141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000004740007414141414141417371007E0003000000000000000274000541414141417371007E0003000000000000000674000839393939393939397371007E0003000000000000000B7400064141414141417371007E00030000000000000003740004414141417371007E0003000000000000001878">
         <parameters xmi:id="_XXnxzoguEe6dw7eNJOqlmQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw6YPcEe6V3uiSxY0FPA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
@@ -871,6 +871,9 @@
     <parameters xmi:id="_XKWz4oguEe6dw7eNJOqlmQ" dataFilter="_Xq_buYguEe6dw7eNJOqlmQ" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
     <contextType xmi:id="_XXeAkIguEe6dw7eNJOqlmQ" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_GDtmiYgvEe6dw7eNJOqlmQ" kind="Usage" supplier="_XKWz2YguEe6dw7eNJOqlmQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/testReport2_0.1.rep#_wnA0CoguEe6dw7eNJOqlmQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_Xq_buYguEe6dw7eNJOqlmQ" name="test2">
     <ranges xmi:id="_Xq_buoguEe6dw7eNJOqlmQ">
       <expressions xmi:id="_Xq_bu4guEe6dw7eNJOqlmQ">
@@ -878,7 +881,4 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_GDtmiYgvEe6dw7eNJOqlmQ" kind="Usage" supplier="_XKWz2YguEe6dw7eNJOqlmQ">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/testReport2_0.1.rep#_wnA0CoguEe6dw7eNJOqlmQ"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
