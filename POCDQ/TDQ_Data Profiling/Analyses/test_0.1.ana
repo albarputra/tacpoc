@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <dataquality.analysis:Analysis xmi:id="_hcnK-YgnEe6dw7eNJOqlmQ" name="test" creationDate="2023-11-21T11:36:21.633+0700">
+    <clientDependency href="../../metadata/connections/MySQLforPOC_0.1.item#_hUtxAIgnEe6dw7eNJOqlmQ"/>
+    <taggedValue xmi:id="_hcnK-ognEe6dw7eNJOqlmQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_hcnK-4gnEe6dw7eNJOqlmQ" tag="Author" value="albarhp@gmail.com"/>
+    <taggedValue xmi:id="_hcnK_IgnEe6dw7eNJOqlmQ" tag="Purpose"/>
+    <taggedValue xmi:id="_hcnK_YgnEe6dw7eNJOqlmQ" tag="Description"/>
+    <taggedValue xmi:id="_hcnK_ognEe6dw7eNJOqlmQ" tag="Version" value="0.1"/>
+    <context xmi:id="_hcnK_4gnEe6dw7eNJOqlmQ">
+      <connection href="../../metadata/connections/MySQLforPOC_0.1.item#_z_FwYIOQEe6BApu8MxDE_w"/>
+      <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/MySQLforPOC_0.1.item#_z_FwYIOQEe6BApu8MxDE_w"/>
+    </context>
+    <results xmi:id="_hcnLAIgnEe6dw7eNJOqlmQ">
+      <resultMetadata xmi:id="_hcnLAYgnEe6dw7eNJOqlmQ"/>
+      <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_hcnLAognEe6dw7eNJOqlmQ">
+        <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/MySQLforPOC_0.1.item#_z_FwYIOQEe6BApu8MxDE_w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
+        <catalogIndicators xmi:id="_hcnLA4gnEe6dw7eNJOqlmQ">
+          <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/MySQLforPOC_0.1.item#_dD_BYIOiEe6BApu8MxDE_w"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+        </catalogIndicators>
+      </indicators>
+    </results>
+    <parameters xmi:id="_hcnLBIgnEe6dw7eNJOqlmQ" dataFilter="_hcnLBYgnEe6dw7eNJOqlmQ" analysisType="Connection Analysis"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_hcnLBYgnEe6dw7eNJOqlmQ" name="Analysis Data Filter" patterns="_hcnLBognEe6dw7eNJOqlmQ">
+    <ownedElement xsi:type="dataquality.domain.pattern:Pattern" xmi:id="_hcnLBognEe6dw7eNJOqlmQ" name="Table Pattern">
+      <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_hcnLB4gnEe6dw7eNJOqlmQ">
+        <expression xmi:id="_hcnLCIgnEe6dw7eNJOqlmQ" body="traffict_data"/>
+      </components>
+    </ownedElement>
+  </dataquality.domain:Domain>
+</xmi:XMI>
