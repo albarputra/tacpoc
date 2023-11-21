@@ -44,5 +44,6 @@
   <analysisMap xmi:id="_isq7H4gqEe6dw7eNJOqlmQ" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/test_0.1.ana#_hcnK-YgnEe6dw7eNJOqlmQ"/>
   </analysisMap>
+  <ExecInformations xmi:id="_VViagIgtEe6dw7eNJOqlmQ" executionDate="2023-11-21T12:09:03.177+0700" executionDuration="535007" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
   <context xmi:id="_isq7HYgqEe6dw7eNJOqlmQ" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>

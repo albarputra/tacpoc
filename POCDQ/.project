@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.output_report-20231121-1217-00059.pdf</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/workspace_2/out_report/output_report-20231121-1217-00059.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>
