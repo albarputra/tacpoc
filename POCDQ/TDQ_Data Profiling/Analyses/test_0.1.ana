@@ -12,14 +12,14 @@
       <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/MySQLforPOC_0.1.item#_z_FwYIOQEe6BApu8MxDE_w"/>
     </context>
     <results xmi:id="_hcnLAIgnEe6dw7eNJOqlmQ">
-      <resultMetadata xmi:id="_hcnLAYgnEe6dw7eNJOqlmQ" executionDate="2023-11-21T11:59:58.799+0700" executionDuration="492096" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
+      <resultMetadata xmi:id="_hcnLAYgnEe6dw7eNJOqlmQ" executionDate="2023-11-21T12:09:03.177+0700" executionDuration="535007" message="" executionNumber="3" lastRunOk="true" lastExecutionNumberOk="3"/>
       <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_hcnLAognEe6dw7eNJOqlmQ" computed="true" tableCount="1" keyCount="1" indexCount="1" tableRowCount="865700000" catalogCount="1">
         <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/MySQLforPOC_0.1.item#_z_FwYIOQEe6BApu8MxDE_w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
-        <catalogIndicators xmi:id="_90iq0IgrEe6dw7eNJOqlmQ" tableCount="1" keyCount="1" indexCount="1" tableRowCount="865700000">
+        <catalogIndicators xmi:id="_VVZ3oIgtEe6dw7eNJOqlmQ" tableCount="1" keyCount="1" indexCount="1" tableRowCount="865700000">
           <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/MySQLforPOC_0.1.item#_dD_BYIOiEe6BApu8MxDE_w"/>
           <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
-          <tableIndicators xmi:id="_90iq0YgrEe6dw7eNJOqlmQ" rowCount="865700000" tableName="traffict_data" keyCount="1" indexCount="1">
+          <tableIndicators xmi:id="_VVZ3oYgtEe6dw7eNJOqlmQ" rowCount="865700000" tableName="traffict_data" keyCount="1" indexCount="1">
             <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
           </tableIndicators>
         </catalogIndicators>
@@ -27,6 +27,9 @@
     </results>
     <parameters xmi:id="_hcnLBIgnEe6dw7eNJOqlmQ" dataFilter="_hcnLBYgnEe6dw7eNJOqlmQ" analysisType="Connection Analysis"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_i2zI0YgqEe6dw7eNJOqlmQ" kind="Usage" supplier="_hcnK-YgnEe6dw7eNJOqlmQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/testReport_0.1.rep#_U77muYgpEe6dw7eNJOqlmQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_hcnLBYgnEe6dw7eNJOqlmQ" name="Analysis Data Filter" patterns="_hcnLBognEe6dw7eNJOqlmQ">
     <ownedElement xsi:type="dataquality.domain.pattern:Pattern" xmi:id="_hcnLBognEe6dw7eNJOqlmQ" name="Table Pattern">
       <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_hcnLB4gnEe6dw7eNJOqlmQ">
@@ -34,7 +37,4 @@
       </components>
     </ownedElement>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_i2zI0YgqEe6dw7eNJOqlmQ" kind="Usage" supplier="_hcnK-YgnEe6dw7eNJOqlmQ">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/testReport_0.1.rep#_U77muYgpEe6dw7eNJOqlmQ"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
