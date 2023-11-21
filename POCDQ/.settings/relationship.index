@@ -34,6 +34,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_EwuLEIgyEe6dw7eNJOqlmQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_CMIluogxEe6dw7eNJOqlmQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_CMIluogxEe6dw7eNJOqlmQ - CUSTOMER_ADDRESS",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_XcGFIIduEe6V3uiSxY0FPA",
     "version" : "0.1",
     "type" : "job"
