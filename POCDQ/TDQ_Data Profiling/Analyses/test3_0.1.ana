@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_eLyxWohlEe6dw7eNJOqlmQ" name="test3" creationDate="2023-11-21T18:59:48.595+0700" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_eLyxWohlEe6dw7eNJOqlmQ" name="test3" supplierDependency="_NcGreohmEe6dw7eNJOqlmQ" creationDate="2023-11-21T18:59:48.595+0700" defaultContext="Default">
     <clientDependency href="../../metadata/connections/MySQLforTAC_0.1.item#_eQtETIhlEe6dw7eNJOqlmQ"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_xKP9IohlEe6dw7eNJOqlmQ"/>
     <taggedValue xmi:id="_eLyxW4hlEe6dw7eNJOqlmQ" tag="Status" value="development"/>
@@ -127,4 +127,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_NcGreohmEe6dw7eNJOqlmQ" kind="Usage" supplier="_eLyxWohlEe6dw7eNJOqlmQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/testReport3_0.1.rep#_3hcyCohlEe6dw7eNJOqlmQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
