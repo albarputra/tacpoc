@@ -84,15 +84,15 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_HtzdsYgmEe6dw7eNJOqlmQ",
+    "version" : "Latest",
+    "type" : "pattern"
+  }, {
     "id" : "_13KlUH77Ee6BApu8MxDE_w",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_CMIluogxEe6dw7eNJOqlmQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_CMIluogxEe6dw7eNJOqlmQ - CUSTOMER",
+    "id" : "_13KlUH77Ee6BApu8MxDE_w - customer",
     "version" : "Latest",
     "type" : "schema"
   } ]
