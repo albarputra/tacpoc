@@ -103,15 +103,7 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_CMIluogxEe6dw7eNJOqlmQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_CMIluogxEe6dw7eNJOqlmQ - ROOT_DEPTH",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_CMIluogxEe6dw7eNJOqlmQ - VEGETABLE_DETAILS",
     "version" : "Latest",
     "type" : "schema"
   } ]
