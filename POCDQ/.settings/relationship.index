@@ -87,14 +87,6 @@
     "id" : "_13KlUH77Ee6BApu8MxDE_w",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_H1jEcYgmEe6dw7eNJOqlmQ",
-    "version" : "Latest",
-    "type" : "rule"
-  }, {
-    "id" : "_13KlUH77Ee6BApu8MxDE_w - customer",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
