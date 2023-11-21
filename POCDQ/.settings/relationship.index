@@ -106,6 +106,14 @@
     "id" : "_13KlUH77Ee6BApu8MxDE_w",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_13KlUH77Ee6BApu8MxDE_w - root_depth",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_13KlUH77Ee6BApu8MxDE_w - vegetable_details",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
