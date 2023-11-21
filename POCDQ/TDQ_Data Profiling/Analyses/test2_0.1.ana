@@ -1,13 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_XKWz2YguEe6dw7eNJOqlmQ" name="test2" creationDate="2023-11-21T12:25:19.008+0700">
-  <taggedValue xmi:id="_XKWz2oguEe6dw7eNJOqlmQ" tag="Status" value="development"/>
-  <taggedValue xmi:id="_XKWz24guEe6dw7eNJOqlmQ" tag="Author" value="albarhp@gmail.com"/>
-  <taggedValue xmi:id="_XKWz3IguEe6dw7eNJOqlmQ" tag="Purpose"/>
-  <taggedValue xmi:id="_XKWz3YguEe6dw7eNJOqlmQ" tag="Description"/>
-  <taggedValue xmi:id="_XKWz3oguEe6dw7eNJOqlmQ" tag="Version" value="0.1"/>
-  <context xmi:id="_XKWz34guEe6dw7eNJOqlmQ"/>
-  <results xmi:id="_XKWz4IguEe6dw7eNJOqlmQ">
-    <resultMetadata xmi:id="_XKWz4YguEe6dw7eNJOqlmQ"/>
-  </results>
-  <parameters xmi:id="_XKWz4oguEe6dw7eNJOqlmQ" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_XKWz2YguEe6dw7eNJOqlmQ" name="test2" creationDate="2023-11-21T12:25:19.008+0700" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/MoratelVerticaDev_0.1.item#_XXnxmIguEe6dw7eNJOqlmQ"/>
+    <taggedValue xmi:id="_XKWz2oguEe6dw7eNJOqlmQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_XKWz24guEe6dw7eNJOqlmQ" tag="Author" value="albarhp@gmail.com"/>
+    <taggedValue xmi:id="_XKWz3IguEe6dw7eNJOqlmQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_XKWz3YguEe6dw7eNJOqlmQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_XKWz3oguEe6dw7eNJOqlmQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_XXeAkYguEe6dw7eNJOqlmQ" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_XXeAkoguEe6dw7eNJOqlmQ" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_XXeAk4guEe6dw7eNJOqlmQ" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_XXnx64guEe6dw7eNJOqlmQ" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_XKWz34guEe6dw7eNJOqlmQ">
+      <connection href="../../metadata/connections/MoratelVerticaDev_0.1.item#_J7huUIOYEe6BApu8MxDE_w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw1YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw2YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw3YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw4YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw5YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw6YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw7YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw8YPcEe6V3uiSxY0FPA"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw9YPcEe6V3uiSxY0FPA"/>
+    </context>
+    <results xmi:id="_XKWz4IguEe6dw7eNJOqlmQ">
+      <resultMetadata xmi:id="_XKWz4YguEe6dw7eNJOqlmQ"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxkIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxkYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnxkoguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxk4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxlIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxlYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxloguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxl4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw0YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxmoguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxm4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw1YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnxnIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxnYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw1YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxnoguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxn4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw1YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxoIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxoYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw1YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxo4guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxpIguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw2YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnxpYguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxpoguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw2YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxp4guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxqIguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw2YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxqYguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxqoguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw2YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxrIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxrYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw3YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnxroguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxr4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw3YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxsIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxsYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw3YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxsoguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxs4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw3YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxtYguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxtoguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw4YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnxt4guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxuIguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw4YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxuYguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxuoguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw4YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxu4guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxvIguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw4YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxvoguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxv4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw5YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnxwIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxwYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw5YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxwoguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxw4guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw5YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxxIguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxxYguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw5YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnxx4guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxyIguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw6YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnxyYguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxyoguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw6YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnxy4guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxzIguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw6YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnxzYguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnxzoguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw6YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnx0IguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx0YguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw7YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnx0oguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx04guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw7YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnx1IguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx1YguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw7YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnx1oguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx14guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw7YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnx2YguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx2oguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw8YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnx24guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx3IguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw8YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnx3YguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx3oguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw8YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnx34guEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx4IguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw8YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XXnx4oguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx44guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw9YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_XXnx5IguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx5YguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw9YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_XXnx5oguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx54guEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw9YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_XXnx6IguEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_XXnx6YguEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MoratelVerticaDev_0.1.item#_G8Fw9YPcEe6V3uiSxY0FPA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_XKWz4oguEe6dw7eNJOqlmQ" dataFilter="_Xq_buYguEe6dw7eNJOqlmQ" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_XXeAkIguEe6dw7eNJOqlmQ" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_Xq_buYguEe6dw7eNJOqlmQ" name="test2">
+    <ranges xmi:id="_Xq_buoguEe6dw7eNJOqlmQ">
+      <expressions xmi:id="_Xq_bu4guEe6dw7eNJOqlmQ">
+        <expression xsi:type="relational:TdExpression" xmi:id="_Xq_bvIguEe6dw7eNJOqlmQ" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
