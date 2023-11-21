@@ -43,11 +43,7 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_CMIluogxEe6dw7eNJOqlmQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_CMIluogxEe6dw7eNJOqlmQ - CUSTOMER_ADDRESS",
+    "id" : "_13KlUH77Ee6BApu8MxDE_w - costumer_address",
     "version" : "Latest",
     "type" : "schema"
   } ]
