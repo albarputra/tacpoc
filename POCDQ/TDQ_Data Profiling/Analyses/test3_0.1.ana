@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_eLyxWohlEe6dw7eNJOqlmQ" name="test3" creationDate="2023-11-21T18:59:48.595+0700">
-  <taggedValue xmi:id="_eLyxW4hlEe6dw7eNJOqlmQ" tag="Status" value="development"/>
-  <taggedValue xmi:id="_eLyxXIhlEe6dw7eNJOqlmQ" tag="Author" value="albarhp@gmail.com"/>
-  <taggedValue xmi:id="_eLyxXYhlEe6dw7eNJOqlmQ" tag="Purpose"/>
-  <taggedValue xmi:id="_eLyxXohlEe6dw7eNJOqlmQ" tag="Description"/>
-  <taggedValue xmi:id="_eLyxX4hlEe6dw7eNJOqlmQ" tag="Version" value="0.1"/>
-  <context xmi:id="_eLyxYIhlEe6dw7eNJOqlmQ"/>
-  <results xmi:id="_eLyxYYhlEe6dw7eNJOqlmQ">
-    <resultMetadata xmi:id="_eLyxYohlEe6dw7eNJOqlmQ"/>
-  </results>
-  <parameters xmi:id="_eLyxY4hlEe6dw7eNJOqlmQ" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_eLyxWohlEe6dw7eNJOqlmQ" name="test3" creationDate="2023-11-21T18:59:48.595+0700" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/MySQLforTAC_0.1.item#_eQtETIhlEe6dw7eNJOqlmQ"/>
+    <taggedValue xmi:id="_eLyxW4hlEe6dw7eNJOqlmQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_eLyxXIhlEe6dw7eNJOqlmQ" tag="Author" value="albarhp@gmail.com"/>
+    <taggedValue xmi:id="_eLyxXYhlEe6dw7eNJOqlmQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_eLyxXohlEe6dw7eNJOqlmQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_eLyxX4hlEe6dw7eNJOqlmQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_eQtEQYhlEe6dw7eNJOqlmQ" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_eQtEQohlEe6dw7eNJOqlmQ" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_eQtEQ4hlEe6dw7eNJOqlmQ" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_eQtETohlEe6dw7eNJOqlmQ" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_eLyxYIhlEe6dw7eNJOqlmQ">
+      <connection href="../../metadata/connections/MySQLforTAC_0.1.item#_YVv5YH78Ee6BApu8MxDE_w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MySQLforTAC_0.1.item#_4df-A4hkEe6dw7eNJOqlmQ"/>
+    </context>
+    <results xmi:id="_eLyxYYhlEe6dw7eNJOqlmQ">
+      <resultMetadata xmi:id="_eLyxYohlEe6dw7eNJOqlmQ"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_eQtERIhlEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_eQtERYhlEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MySQLforTAC_0.1.item#_4df-A4hkEe6dw7eNJOqlmQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_eQtERohlEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_eQtER4hlEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MySQLforTAC_0.1.item#_4df-A4hkEe6dw7eNJOqlmQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_eQtESIhlEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_eQtESYhlEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MySQLforTAC_0.1.item#_4df-A4hkEe6dw7eNJOqlmQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_eQtESohlEe6dw7eNJOqlmQ">
+        <parameters xmi:id="_eQtES4hlEe6dw7eNJOqlmQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MySQLforTAC_0.1.item#_4df-A4hkEe6dw7eNJOqlmQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_eLyxY4hlEe6dw7eNJOqlmQ" dataFilter="_gfdcqohlEe6dw7eNJOqlmQ" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_eQtEQIhlEe6dw7eNJOqlmQ" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_gfdcqohlEe6dw7eNJOqlmQ" name="test3">
+    <ranges xmi:id="_gfdcq4hlEe6dw7eNJOqlmQ">
+      <expressions xmi:id="_gfdcrIhlEe6dw7eNJOqlmQ">
+        <expression xsi:type="relational:TdExpression" xmi:id="_gfdcrYhlEe6dw7eNJOqlmQ" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
