@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_3hcyCohlEe6dw7eNJOqlmQ" name="testReport3" creationDate="2023-11-21T19:02:38.654+0700">
+  <taggedValue xmi:id="_3hcyC4hlEe6dw7eNJOqlmQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_3hcyDIhlEe6dw7eNJOqlmQ" tag="Author" value="albarhp@gmail.com"/>
+  <taggedValue xmi:id="_3hcyDYhlEe6dw7eNJOqlmQ" tag="Purpose"/>
+  <taggedValue xmi:id="_3hcyDohlEe6dw7eNJOqlmQ" tag="Description"/>
+  <taggedValue xmi:id="_3hcyD4hlEe6dw7eNJOqlmQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_3hcyEIhlEe6dw7eNJOqlmQ" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_3hcyEYhlEe6dw7eNJOqlmQ" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_3hcyEohlEe6dw7eNJOqlmQ" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_3hcyE4hlEe6dw7eNJOqlmQ" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_3hcyFIhlEe6dw7eNJOqlmQ" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_3hcyFYhlEe6dw7eNJOqlmQ" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_3hcyFohlEe6dw7eNJOqlmQ" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_3hcyF4hlEe6dw7eNJOqlmQ" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_3hcyGIhlEe6dw7eNJOqlmQ" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_3hcyGYhlEe6dw7eNJOqlmQ" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:qiOyBS55EQZEdXUb0ZsDSaT8QymXd0xCky8Pdw=="/>
+  <taggedValue xmi:id="_3hcyGohlEe6dw7eNJOqlmQ" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_3hcyG4hlEe6dw7eNJOqlmQ" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Users\Administrator\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_3hcyHIhlEe6dw7eNJOqlmQ" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_3hcyHYhlEe6dw7eNJOqlmQ" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_3hcyHohlEe6dw7eNJOqlmQ" tag="REP_PASSWORD_CONTEXT" value="false"/>
+</dataquality.reports:TdReport>
