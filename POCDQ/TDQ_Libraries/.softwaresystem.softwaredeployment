@@ -3,4 +3,5 @@
   <softwaredeployment:TdSoftwareSystem xmi:id="_eU8NMIgnEe6dw7eNJOqlmQ" name="MySQL" subtype="MySQL" version="10.3.38-MariaDB-0ubuntu0.20.04.1"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_eU8NMYgnEe6dw7eNJOqlmQ" name="Vertica Database" subtype="Vertica Database" version="12.00.0000"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_bvxYkIhlEe6dw7eNJOqlmQ" name="Snowflake" subtype="Snowflake" version="7.41.0"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_rqH8dYhlEe6dw7eNJOqlmQ" name="MySQL" subtype="MySQL" version="8.0.32"/>
 </xmi:XMI>
