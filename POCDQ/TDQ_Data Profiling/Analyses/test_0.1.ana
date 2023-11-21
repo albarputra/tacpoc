@@ -12,13 +12,16 @@
       <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/MySQLforPOC_0.1.item#_z_FwYIOQEe6BApu8MxDE_w"/>
     </context>
     <results xmi:id="_hcnLAIgnEe6dw7eNJOqlmQ">
-      <resultMetadata xmi:id="_hcnLAYgnEe6dw7eNJOqlmQ"/>
-      <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_hcnLAognEe6dw7eNJOqlmQ">
+      <resultMetadata xmi:id="_hcnLAYgnEe6dw7eNJOqlmQ" executionDate="2023-11-21T11:36:39.727+0700" executionDuration="546127" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_hcnLAognEe6dw7eNJOqlmQ" computed="true" tableCount="1" keyCount="1" indexCount="1" tableRowCount="865700000" catalogCount="1">
         <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/MySQLforPOC_0.1.item#_z_FwYIOQEe6BApu8MxDE_w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
-        <catalogIndicators xmi:id="_hcnLA4gnEe6dw7eNJOqlmQ">
+        <catalogIndicators xmi:id="_1ZR2EIgoEe6dw7eNJOqlmQ" tableCount="1" keyCount="1" indexCount="1" tableRowCount="865700000">
           <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/MySQLforPOC_0.1.item#_dD_BYIOiEe6BApu8MxDE_w"/>
           <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+          <tableIndicators xmi:id="_1ZR2EYgoEe6dw7eNJOqlmQ" rowCount="865700000" tableName="traffict_data" keyCount="1" indexCount="1">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
         </catalogIndicators>
       </indicators>
     </results>
